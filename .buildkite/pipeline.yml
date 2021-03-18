@@ -1,0 +1,13 @@
+steps:
+  - block: ":ballot_box_with_ballot:"
+    prompt: "We robots have questions. Many questions."
+    fields:
+      - text: "How many steps to create?"
+        key: "generated-number"
+
+  - wait
+
+  - label: ":pipeline:"
+    command: ./src/get-number.sh | buildkite-agent pipeline upload
+
+
