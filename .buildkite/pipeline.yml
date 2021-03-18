@@ -8,6 +8,6 @@ steps:
   - wait
 
   - label: ":pipeline:"
-    command: ./src/get-number.sh | buildkite-agent pipeline upload
+    command: ./src/get-steps-from-input.sh | buildkite-agent pipeline upload
 
 
