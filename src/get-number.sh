@@ -1,5 +1,3 @@
-#generated_number=$(generate_number)
+NUMBER=$((( $RANDOM % 100 )  + 1))
 
-#echo "generated number is ${generate_number}"
-
-echo "generated number is 6666"
+echo "random number is ${NUMBER}"
