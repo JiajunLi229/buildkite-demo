@@ -4,5 +4,5 @@ steps:
     label: ":suspect:"
     branches: "main"
     build:
-      commit: "$BUILDKITE_COMMIT"
-      branch: "$BUILDKITE_BRANCH"
+      commit: HEAD
+      branch: MAIN
