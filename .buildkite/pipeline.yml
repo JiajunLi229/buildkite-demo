@@ -7,8 +7,6 @@ steps:
       - text: "How many steps to create?"
         key: "generated-number"
 
-  - wait
-
   - label: ":pipeline:"
     command: ./src/get-steps-from-input.sh | buildkite-agent pipeline upload
 
