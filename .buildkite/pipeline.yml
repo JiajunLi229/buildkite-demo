@@ -1,4 +1,6 @@
 steps:
+  - command: echo "hello world"
+
   - input: ":ballot_box_with_ballot:"
     prompt: "We robots have questions. Many questions."
     fields:
