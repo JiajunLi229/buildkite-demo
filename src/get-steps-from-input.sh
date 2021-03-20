@@ -1,6 +1,6 @@
 steps_count=100
 
-buildkite-agent meta-data set steps-count "$steps_count"
+buildkite-agent meta-data set total "$steps_count"
 
 echo "steps:"
 steps_count=${steps_count}
