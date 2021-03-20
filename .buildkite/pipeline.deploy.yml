@@ -2,6 +2,3 @@
 steps:
   - command: echo "Yes Sir, Roger that!"
     label: ":gun:"
-    concurrency_group: "roger-that"
-    concurrency: 1
-    branches: "main"
