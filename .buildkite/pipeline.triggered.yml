@@ -1,12 +1,6 @@
 steps:
-  - command: echo 'Tests'
-    label: ':hammer:'
-  - wait
-  - trigger: dependent-pipeline-example-deploy
+  - command: echo 'Deploy'
     label: ":rocket:"
+    concurrency_group: "$BUILDKITE_PIPELINE_SLUG-deploy"
+    concurrency: 1
     branches: "master"
-    async: true
-    build:
-      commit: "$BUILDKITE_COMMIT"
-      branch: "$BUILDKITE_BRANCH"
-      message: "$BUILDKITE_MESSAGE"
