@@ -1,10 +1,7 @@
 
 steps:
-  - command: echo 'Tests'
-    label: ':hammer:'
-  - wait
-  - trigger: dependent-pipeline-deploy
-    label: ":rocket:"
+  - trigger: roger-that
+    label: ":suspect:"
     branches: "main"
     async: true
     build:
