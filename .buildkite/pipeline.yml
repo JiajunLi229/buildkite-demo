@@ -2,6 +2,7 @@ steps:
   - command: echo "hello world"
 
   - input: ":ballot_box_with_ballot:"
+    key: "second-step"
     prompt: "We robots have questions. Many questions."
     fields:
       - text: "How many steps to create?"
@@ -9,5 +10,5 @@ steps:
 
   - label: ":pipeline:"
     command: ./src/get-steps-from-input.sh | buildkite-agent pipeline upload
-    depends_on: "generated-number"
+    depends_on: "second-step"
 
