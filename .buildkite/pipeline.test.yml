@@ -5,4 +5,4 @@ steps:
     branches: "main"
     build:
       commit: HEAD
-      branch: MAIN
+      branch: main
