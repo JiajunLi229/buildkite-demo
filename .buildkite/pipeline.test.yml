@@ -3,3 +3,7 @@ steps:
   - trigger: roger-that
     label: ":suspect:"
     branches: "main"
+    build:
+      commit: "$BUILDKITE_COMMIT"
+      branch: "$BUILDKITE_BRANCH"
+      message: "$BUILDKITE_MESSAGE"
