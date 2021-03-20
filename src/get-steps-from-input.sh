@@ -1,4 +1,4 @@
-steps_count=$(buildkite-agent meta-data get generated-number)
+steps_count=100
 
 buildkite-agent meta-data set steps-count "$steps_count"
 
