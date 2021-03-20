@@ -4,7 +4,7 @@ buildkite-agent meta-data set total "$steps_count"
 
 echo "steps:"
 steps_count=${steps_count}
-for((i=1;i<steps_count;i++));
+for((i=1;i<=steps_count;i++));
 do
   cat <<YAML
 - label: "$i"
