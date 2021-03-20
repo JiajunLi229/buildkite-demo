@@ -9,5 +9,5 @@ steps:
 
   - label: ":pipeline:"
     command: ./src/get-steps-from-input.sh | buildkite-agent pipeline upload
-
+    depends_on: "generated-number"
 
