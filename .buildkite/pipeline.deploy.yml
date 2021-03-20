@@ -1,4 +1,4 @@
 
 steps:
-  - command: echo "Yes Sir, Roger that!"
+  - command: echo "Yes Sir, Roger that! BUILDKITE_COMMIT is $BUILDKITE_COMMIT, BUILDKITE_BRANCH is $BUILDKITE_BRANCH, BUILDKITE_MESSAGE is $BUILDKITE_MESSAGE "
     label: ":gun:"
