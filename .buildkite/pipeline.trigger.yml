@@ -1,2 +1,6 @@
 steps:
-  - trigger: echo "trigger success"
+  - command: echo 'Deploy'
+    label: ":rocket:"
+    concurrency_group: "$BUILDKITE_PIPELINE_SLUG-deploy"
+    concurrency: 1
+    branches: "master"
