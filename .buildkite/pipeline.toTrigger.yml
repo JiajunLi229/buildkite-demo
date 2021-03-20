@@ -1,0 +1,8 @@
+- trigger: toBeTriggered
+  label: ":rocket:"
+  branches: "trigger"
+  async: true
+  build:
+    commit: "$BUILDKITE_COMMIT"
+    branch: "$BUILDKITE_BRANCH"
+    message: "$BUILDKITE_MESSAGE"
