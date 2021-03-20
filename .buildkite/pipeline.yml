@@ -10,4 +10,4 @@ steps:
   - label: ":pipeline:"
     command: ./src/get-steps-from-input.sh | buildkite-agent pipeline upload
 
-  - trigger: echo "trigger successful"
+  - trigger: ./src/trigger.sh
