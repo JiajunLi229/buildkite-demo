@@ -1,5 +1,7 @@
 steps:
   - command: echo "hello world"
+    agents:
+      queue: testing
 
   - block: ":ballot_box_with_ballot:"
     prompt: "We robots have questions. Many questions."
