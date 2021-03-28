@@ -2,7 +2,6 @@
 steps:
   - trigger: roger-that
     label: ":suspect:"
-    branches: "main"
     build:
       commit: HEAD
       branch: main
